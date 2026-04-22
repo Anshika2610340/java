@@ -1,35 +1,39 @@
-abstract class shape2d{
+abstract class Shape2D {
     abstract void draw();
     abstract void resize();
 }
-class rectangle extends shape2d{
+
+class Rectangle extends Shape2D {
     @Override
-    void draw(){
-        System.out.println("drawing a rectangle...");
+    void draw() {
+        System.out.println("Drawing a rectangle...");
     }
+
     @Override
-    void resize(){
-        System.out.println("resizing a rectangle...");
-    }
-}
-class circle extends shape2d{
-    @Override
-    void draw(){
-        System.out.println("drawing a circle...");
-    }
-    @Override
-    void resize(){
-        System.out.println("resizing a circle...");
+    void resize() {
+        System.out.println("Resizing a rectangle...");
     }
 }
+
+class Circle extends Shape2D {
+    @Override
+    void draw() {
+        System.out.println("Drawing a circle...");
+    }
+
+    @Override
+    void resize() {
+        System.out.println("Resizing a circle...");
+    }
+}
+
 public class Practisequestion161 {
-    public static void main(String[] args){
-        /*Write a Java program to create an abstract class Shape2D with abstract methods draw() and resize(). 
-        Create subclasses Rectangle and Circle that extend the Shape2D class and implement the respective methods to draw and resize each shape. */
-        rectangle r=new rectangle();
+    public static void main(String[] args) {
+        Shape2D r = new Rectangle();
         r.draw();
         r.resize();
-        circle c=new circle();
+
+        Shape2D c = new Circle();
         c.draw();
         c.resize();
     }
