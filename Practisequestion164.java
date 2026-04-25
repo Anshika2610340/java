@@ -1,7 +1,7 @@
-interface shape{
+interface shape2{
     double getarea();
 }
-class rectangle implements shape{
+class rectangle implements shape2{
     double length,breadth;
     rectangle(double length,double breadth){
         this.length=length;
@@ -11,18 +11,18 @@ class rectangle implements shape{
         return length*breadth;
     }
 }
-class circle implements shape{
+class circle1 implements shape2{
     double radius;
-    circle(double radius){
+    circle1(double radius){
         this.radius=radius;
     }
     public double getarea(){
         return 3.14*radius*radius;
     }
 }
-class triangle implements shape{
+class triangle2 implements shape2{
     double base,height;
-    triangle(double base,double height){
+    triangle2(double base,double height){
         this.base=base;
         this.height=height;
     }
@@ -36,8 +36,8 @@ public class Practisequestion164 {
         Create three classes Rectangle, Circle, and Triangle that implement the Shape interface. 
         Implement the getArea() method for each of the three classes. */
         rectangle r=new rectangle(5,10);
-        circle c=new circle(5);
-        triangle t=new triangle(5,10);
+        circle1 c=new circle1(5);
+        triangle2 t=new triangle2(5,10);
         System.out.println("area of rectangle is:"+r.getarea());
         System.out.println("area of circle is:"+c.getarea());
         System.out.println("area of triangle is:"+t.getarea());
