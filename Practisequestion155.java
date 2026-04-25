@@ -1,8 +1,8 @@
-abstract class animal{
+abstract class animal1{
     abstract void eat();
     abstract void sleep();
 }
-class lion extends animal{
+class lion1 extends animal1{
     @Override
     void eat(){
         System.out.println("lions eat meat");
@@ -12,7 +12,7 @@ class lion extends animal{
         System.out.println("lions sleep in a day");
     }
 }
-class tiger extends animal{
+class tiger1 extends animal1{
     @Override
     void eat(){
         System.out.println("tigers eat meat");
@@ -22,7 +22,7 @@ class tiger extends animal{
         System.out.println("tigers sleep in a day");
     }
 }
-class deer extends animal{
+class deer1 extends animal1{
     @Override
     void eat(){
         System.out.println("deers eat grass");
@@ -36,9 +36,9 @@ public class Practisequestion155 {
     public static void main(String[] args){
         /*Write a Java program to create an abstract class Animal with abstract methods eat() and sleep(). 
         Create subclasses Lion, Tiger, and Deer that extend the Animal class and implement the eat() and sleep() methods differently based on their specific behavior. */
-        lion l=new lion();
-        tiger t=new tiger();
-        deer d=new deer();
+        lion1 l=new lion1();
+        tiger1 t=new tiger1();
+        deer1 d=new deer1();
         l.eat();
         l.sleep();
         t.eat();
