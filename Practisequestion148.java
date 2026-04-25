@@ -1,9 +1,9 @@
-class animal{
+class animal4{
     public void move(){
         System.out.println("moving.....");
     }
 }
-class cheetah extends animal{
+class cheetah extends animal4{
     @Override
     public void move(){
         System.out.println("cheetah moving.....");
