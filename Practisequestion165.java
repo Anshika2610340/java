@@ -1,7 +1,7 @@
-interface animal{
+interface animal2{
     void bark();
 }
-class  dog implements animal{
+class  dog implements animal2{
     public void bark(){
         System.out.println("dog is barking...");
     }
