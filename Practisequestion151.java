@@ -1,7 +1,7 @@
-class employee{
+class employee5{
     String name,address,jobtitle;
     int salary;
-    public employee(String name,String address,String jobtitle,int salary){
+    public employee5(String name,String address,String jobtitle,int salary){
         this.name=name;
         this.address=address;
         this.jobtitle=jobtitle;
@@ -29,8 +29,8 @@ class employee{
         System.out.println("no such projects yet...");
     }
 }
-class manager extends employee{
-    public manager(String name,String address,String jobtitle,int salary){
+class manager1 extends employee5{
+    public manager1(String name,String address,String jobtitle,int salary){
         super(name,address,jobtitle,salary);
     }
     @Override
@@ -50,7 +50,7 @@ public class Practisequestion151 {
         The base class should be Employee, with subclasses Manager, Developer, and  Programmer. 
         Each subclass should have properties such as name, address, salary, and job title. 
         Implement methods for calculating bonuses, generating performance reports, and managing projects. */
-        manager m=new manager("akhita","E202","manager",25000);
+        manager1 m=new manager1("akhita","E202","manager",25000);
         System.out.println(m.bonuses());
         m.performance();
         m.managingprojects();
