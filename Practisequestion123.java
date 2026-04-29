@@ -32,7 +32,7 @@ class courier{
     }
     public void print(){
         System.out.println("name\tweight\taddress\ttype\tbill");
-        System.out.println(name+"\t"+weight+"\t"+address+"\t"+type+"\t"+bill);
+        System.out.println(name+"\t"+weight+"\t"+address+"\t"+type+"\t"+bill+" ");
     }
 }
 public class Practisequestion123 {
