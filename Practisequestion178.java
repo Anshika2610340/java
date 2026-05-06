@@ -25,7 +25,7 @@ class programmer2 extends employee2{
         System.out.println("name:"+name+"\t"+"post:programmer\t"+"salary:"+salary);
     }
 }
-public class Practisequestion179 {
+public class Practisequestion178 {
     public static void main(String[] args) {
         /*Write a Java program to create a class Employee with a method called calculateSalary().
         Create two subclasses Manager and  Programmer.
